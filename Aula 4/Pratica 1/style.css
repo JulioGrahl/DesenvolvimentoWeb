@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+legend {
+    font-weight: bold;
+    color: #2c3e50;
+    padding: 0 10px;
+    font-size: 1.2rem;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #34495e;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+input[type="color"] {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.radio-group {
+    flex-direction: row;
+    align-items: center;
+}
+
+.radio-options {
+    display: flex;
+    gap: 20px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+}
+
+.radio-option input[type="radio"] {
+    margin-right: 5px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+
+input:required {
+    border-left: 3px solid #3498db;
+}
+
+input:valid {
+    border-left: 3px solid #2ecc71;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown) {
+    border-left: 3px solid #e74c3c;
+}

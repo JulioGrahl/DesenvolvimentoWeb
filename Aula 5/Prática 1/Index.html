@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Colorida</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../">
+</head>
+<body>
+    <div class="calculator">
+        <h1 class="title">Calculadora</h1>
+        
+        <div class="display">
+            <div class="previous-operand" id="previous-operand"></div>
+            <div class="current-operand" id="current-operand">0</div>
+        </div>
+        
+        <div class="result-display zero" id="result-display">0</div>
+        
+        <div class="buttons">
+            <button class="clear" onclick="clearAll()">C</button>
+            <button onclick="backspace()">⌫</button>
+            <button class="operator" onclick="appendOperator('/')">/</button>
+            <button class="operator" onclick="appendOperator('*')">×</button>
+            
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button class="operator" onclick="appendOperator('-')">-</button>
+            
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button class="operator" onclick="appendOperator('+')">+</button>
+            
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button onclick="calculate()" class="equals">=</button>
+            
+            <button onclick="appendNumber('0')">0</button>
+            <button onclick="appendNumber('.')">.</button>
+        </div>
+        
+        <div class="instructions">
+            <p>• O resultado ficará <span style="color: #2ecc71">VERDE</span> para valores positivos</p>
+            <p>• O resultado ficará <span style="color: #e74c3c">VERMELHO</span> para valores negativos</p>
+            <p>• O resultado ficará <span style="color: #95a5a6">CINZA</span> para zero</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
