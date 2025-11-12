@@ -1,0 +1,9 @@
+------------------------------------ Instruções de uso do projeto -------------------------------------
+
+1. Copiar o código para criação de tabelas do arquivo "setup.sql" e executar no Query Tool no pgAdmin
+2. Verificar se os dados para conecxão com o banco de dados estão corretos (usuário, senha, ect)
+3. Habilitar no PHP.ini as opções "extension=pgsql" e "extension=pdo_pgsql"
+4. Inicializar o Apache
+5. Acessar local do arquivo para inicializar o "Index.php" e executar o programa
+
+------------------------------------------------------------------------------------------------------- 
