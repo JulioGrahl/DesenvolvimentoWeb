@@ -3,7 +3,7 @@
                          port=5432 
                          dbname=local 
                          user=postgres 
-                         password=unidavi");                  
+                         password=postgres");                  
     $busca = $_GET['busca'] ?? '';
 
     $sql = $busca ? "SELECT * 
